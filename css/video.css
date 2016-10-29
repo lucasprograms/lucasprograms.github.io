@@ -1,0 +1,13 @@
+@media (max-device-width: 768px) {
+	.background-video
+	{
+	  display: none;
+	}
+}
+
+.background-video
+{
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
