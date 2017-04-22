@@ -15,6 +15,10 @@ input {
     margin-bottom: 15px;
 }
 
+.actionable-insights {
+    margin-bottom: 15px;
+}
+
 .glyphicon-ok {
     color: green;
     margin-right: 2%;
