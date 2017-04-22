@@ -1,45 +1,47 @@
 <html>
     <head>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel='stylesheet' href='./css/main.css' />
-        <link rel="stylesheet" type="text/css" href="./css/about.css">
-        <link rel="stylesheet" type="text/css" href="./css/contact.css">
-        <link rel="stylesheet" type="text/css" href="./css/footer.css">
-        <link rel="stylesheet" type="text/css" href="./css/main-headers.css">
-        <link rel="stylesheet" type="text/css" href="./css/nav.css">
-        <link rel="stylesheet" type="text/css" href="./css/projects.css">
-        <link rel="stylesheet" type="text/css" href="./css/video.css">
-        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto" rel="stylesheet">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <script type="text/javascript" src="./main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.0/clipboard.min.js"></script>
+        <script type="text/javascript" src="./index.js"></script>   
     </head>
-    <body>
-        <nav class='clearfix'>
-          <div class='nav-element contact-info right-most-nav'>
-            Contact
-          </div>
-          <div class='nav-element about-me'>
-            About
-          </div>
-          <div class='nav-element my-projects left-most-nav'>
-            Projects
-          </div>
-        </nav>
-        <video class='background-video'
-               src='https://static.videezy.com/system/resources/previews/000/002/513/original/Smoke.mp4'
-               autoplay='true' loop>
-        </video>
-
-        <header class='center-container'>
-            <h1 class='main-header name-header'>
-              lucas mccain
-            </h1>
-            <h2 class='main-header role-description'>
-              Front End Developer
-            </h2>
-        </header>
-        <footer>
-        </footer>
+    <body class="container-fluid">
+        <h1>Lucas McCain</h1>
+        <img id="portrait" src="./portrait.jpg">
+        <h3>Front End Developer</h3>
+        <div class="row pros-and-cons">
+            <label class="col-xs-6 col-sm-4 col-md-3" for="pros">Pros</label>
+            <label class="col-xs-6 col-sm-4 col-md-3" for="cons">Cons</label>
+            <div class="col-xs-hidden col-sm-4 col-md-6" style="height:25px;"></div>
+            <ul id="pros" class="col-xs-6 col-sm-4 col-md-3">
+                <li><span class="glyphicon glyphicon-ok"></span>Winning smile</li>
+                <li><span class="glyphicon glyphicon-ok"></span>Large hands reach many keys</li>
+                <li><span class="glyphicon glyphicon-ok"></span>Enjoys programming</li>
+            </ul>
+            <ul id="cons" class="col-xs-6 col-sm-4 col-md-3">
+                <li><span class="glyphicon glyphicon-remove"></span>Works too hard</li>
+                <li><span class="glyphicon glyphicon-remove"></span>Cares too much</li>
+                <li><span class="glyphicon glyphicon-remove"></span>Melts in sunlight</li>
+            </ul>
+        </div>
+        <div class="row work-things">
+            <label class="col-xs-12" for="work-experience">Work Experience</label>
+            <ul id="work-experience" class="col-xs-12">
+                <li>Ameriprise Financial (contract) - Nov. '16 to Present</li>
+                <li>Mic Inc. - Jan. '16 to July '16</li>
+            </ul>
+        </div>
+        <label class="link-up" for="contact"><span class="glyphicon glyphicon-arrow-down"></span> GET ACTIONABLE <span class="glyphicon glyphicon-arrow-down"></span></label>
+        <ul id="contact row">
+            <li class="email col-xs-12">
+                <span class="email-label">Contact</span>
+                <input onclick="this.focus();this.select();" class="email-address hidden" value="lucasprograms@gmail.com" readonly />
+            </li>
+            <li class="col-xs-12"><a href="https://linkedin.com/in/mccainlucas">LinkedIn</li>
+            <li class="col-xs-12"><a href="./LucasMcCainResume.pdf" download>Resume</a></li>
+        </ul>
     </body>
 </html>

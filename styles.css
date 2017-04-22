@@ -1,0 +1,47 @@
+body {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    padding: 0;
+}
+
+.pros-and-cons {
+    margin-bottom: 15px;
+}
+
+.glyphicon-ok {
+    color: green;
+    margin-right: 2%;
+}
+
+.glyphicon-remove {
+    color: maroon;
+    margin-right: 2%;
+}
+
+#portrait {
+    width: 250px;
+}
+
+.work-things {
+    margin-bottom: 15px;
+}
+
+.email {
+    cursor: pointer;
+}
+
+.email-label {
+    color: #337ab7;
+}
+
+.email-address {
+    width: 100%;
+}
+
