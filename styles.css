@@ -1,6 +1,8 @@
 body {
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    border-left: 50px solid #2f4f4f;
+    padding-left: 25px;
 }
 
 input {
@@ -19,6 +21,14 @@ input {
     margin-bottom: 15px;
 }
 
+.work-things {
+    margin-bottom: 15px;
+}
+
+.so-quotable {
+    margin-bottom: 15px;
+}
+
 .glyphicon-ok {
     color: green;
     margin-right: 2%;
@@ -31,10 +41,6 @@ input {
 
 #portrait {
     width: 250px;
-}
-
-.work-things {
-    margin-bottom: 15px;
 }
 
 .email {
